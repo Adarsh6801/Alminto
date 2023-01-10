@@ -1,0 +1,28 @@
+ <section>
+      <div class="container ">
+        <div class="row">
+          {{#each products}}
+            <div class="col-md-3 card-1 p-3">
+              <div class="card border-0" style="width: 15rem;height: 25rem;">
+                <div style="height: 430px;" class="d-flex align-items-center">
+                    <img src="/product-images/{{this._id}}.jpg" class="card-img-top " alt="..." />
+                </div>
+                
+                <div class="card-body text-center" ">
+                  <h4 class="card-title">{{this.Name}}</h4>
+                
+                  <h5 class="card-cat">{{this.Category}}</h6>
+                  
+                  <p class="card-text">{{this.Discription}}</p>
+                  <h4 class="card-title" style="color:#ff1303"  >₹ {{this.Price}}</h4>
+                  <a href="#" class="btn btn-warning text-decoration-none text-white">Taste It</a>
+                </div>
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </section>
+
+
+   
